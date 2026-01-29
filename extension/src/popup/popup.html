@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Autofill</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vector Autofill</h1>
+
+    <div id="server-status" class="status status--offline">
+      Server: <span id="status-text">checking...</span>
+    </div>
+
+    <div id="fields-container">
+      <!-- User data fields are rendered here dynamically -->
+    </div>
+
+    <div class="actions">
+      <button id="add-field-btn" type="button">+ Add Field</button>
+      <button id="save-btn" type="button">Save</button>
+      <button id="fill-btn" type="button">Fill Page</button>
+    </div>
+  </div>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
